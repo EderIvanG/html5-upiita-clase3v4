@@ -4,7 +4,15 @@
         <meta charset="UTF-8" />
         <title>Objetos</title>
         <script>
-
+      var usuario ={};
+      usuario.nombre = prompt("nombre");
+      usuario.apellido = prompt("apellido");
+      usuario.edad = prompt("edad");
+      //definimos la funcion
+      var muestraDatos = function(persona){
+      	alert("nombre" + persona.nombre + "" + persona.apellido + "edad" + persona.edad);
+      }; 
+      muestraDatos(usuario);
         </script>
     </head>
     <body>

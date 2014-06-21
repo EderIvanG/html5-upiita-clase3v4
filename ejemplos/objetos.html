@@ -3,7 +3,41 @@
         <title>JavaScript</title>
         <meta charset="UTF-8"/>
         <script>
-                                    
+        // definir el objeto//                
+       var persona = new Object();
+       //atributos de persona//
+       persona.nombre = "eder";
+       persona.edad = 20;
+       //funciones de persona//
+       persona.hablar = function (){
+       	alert ("buenos dias");
+       };
+       //persona.hablar();
+       //alert(persona.nombre); //persona.. tiene varios valores guardados como nombre,edad y funcion
+       // crar un objeto con notacion JSON (java script object notation)
+       var gato = {
+       	nombre: "pelos", 
+       	raza: "persa",
+       	//acciones que puede hacer el gato
+       	maullar: function(){
+       		alert("miau miau");
+       	}, //se le pone una coma si en caso de que valla otro atributo
+        comer: function(){
+        	alert("ñom ñom");
+        }      
+       }; 
+       gato.edad = 4;
+       // cambio al valor de un atributo 
+       gato.nombre = "pelos";
+       gato.maullar(); //lleva parentesis por que es una funcion
+       gato.comer ();
+       var perro = {};
+       perro.nombre ="reptar";
+       perro.ladrar = function (){
+       	alert ("guau guau");
+       };
+       perro.ladrar();
+       var nombre = prompt("como te llamas"); //prompt es para pedir datos 
         </script>
     </head>
     <body></body>
